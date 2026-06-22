@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: create-container-error
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    command: ["/definitely-does-not-exist"]
